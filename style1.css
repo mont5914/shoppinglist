@@ -1,0 +1,149 @@
+ /* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* End of Reset */
+/* Start of Custom Styles */
+
+
+
+/*.content {
+  padding: 0 15px:
+*/
+}
+
+
+/*Navigation Section */
+
+.top-navigation {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  
+}
+
+.top-navigation > .content {
+  height: 70px;
+  margin: 0 auto;
+  width: 1200px;
+  
+  
+}
+
+.top-navigation .logo {
+  height: 60px;
+}
+
+.top-navigation .links {
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 22px;
+    margin-top: 25px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links li {
+    display: inline-block;
+    margin-left: 25px;
+
+}
+
+a {
+  color: #4c5058;
+  font-weight: 500;
+  text-decoration:none;
+}
+
+
+
+
+.top-navigation .links {
+    cursor: pointer;
+    color: #575C5F;
+}
+
+.introduction {
+    background-image: url('http://i.imgur.com/sRGLcRh.jpg');
+    background-position: 0 top;
+    background-repeat: no-repeat;
+    background-size:76em 46em ; 
+    height: 46em;
+    overflow: auto;
+    text-align: center;
+    background-color: black;
+    
+
+
+
+}
+
+ .content {
+  margin-top:7.875rem;
+  text-align: center;
+  color: #1d1e21;
+}
+
+.hidden {
+  display:none;
+}
+
+.cuttingboard {
+  position: absolute;
+  width: 28%;
+  height:74%;
+  background-color: blue;
+  top: 48%;
+  left:11.4%;
+  overflow: auto;
+  display:none;
+
+}
+
+*************Footer************
+.footer {
+  color:#B8B9BA;
+
+}
