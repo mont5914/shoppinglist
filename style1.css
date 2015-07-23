@@ -106,7 +106,7 @@ a {
 }
 
 .introduction {
-    background-image: url('http://i.imgur.com/sRGLcRh.jpg');
+    background-image: url('http://i.imgur.com/1NUpjy5.jpg');
     background-position: 0 top;
     background-repeat: no-repeat;
     background-size:76em 46em ; 
@@ -130,7 +130,7 @@ a {
   display:none;
 }
 
-.cuttingboard {
+/* .cuttingboard {
   position: absolute;
   width: 28%;
   height:74%;
@@ -138,8 +138,22 @@ a {
   top: 48%;
   left:11.4%;
   overflow: auto;
-  display:none;
+  display:none; */
 
+}
+
+#image1 {
+    float:left;
+    width: 45%;
+    height: 500px;
+    background-color: blue;
+}
+
+#image2 {
+    float:right;
+    width:45%;
+    height:500px;
+    background-color: red;
 }
 
 *************Footer************
