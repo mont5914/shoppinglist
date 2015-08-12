@@ -7,7 +7,7 @@
 			<!--<link href="css/font-awesome.min.css" rel="stylesheet">
 				 -->
 				<script src="http://code.jquery.com/jquery.min.js"></script>
-				<script src="js/shoppinglist.js"></script>
+				<script src="list15.js"></script>
 	</head>
 
 	<body>
@@ -19,56 +19,81 @@
 				</ul>
 
 			</div>
-
+		</nav>
+		
 		<section class="introduction">
-    		<div class="image-content">
-    	
-    				<div id="image1">
-    				</div> 
+    		<div>
+	    			
+		    			<div id="image2"> </div>
 
-    				<div id="image2"> 
-    				</div>
+		    			<div id="image3"> </div>
+
+		    			<div id="image4"> </div>
+
+		    			<div id="image6"> </div>
+
+		    			<div id="image7"> </div>
+
     		</div>
+
+
+    		<div id="image5"> 
+    			
+    			<div id="counter">
+    				(<span id="size">0</span>)
+    			</div>
+
+    			<div id="buttons"> 
+					<input type="text" id="itemtext">
+					<input type="button" value="Add item" onclick="addTemplatedItem()">
+					<input type="button" value="Delete Selected" onclick="deleteSelected()"/>
+				</div>
+
+			<!--	<div id="list"> -->
+					<script id="template" type="text/template">
+				  		<tr>
+				    		<td><input type="checkbox" name="myCheckbox"/></td>
+				    		<td><label>{{itemText}}</label></td>
+				    		<td><input type="text" name="quantity" size="2"/></td>
+				    		<td><input type="button" value="delete" onclick="deleteItem(this)"/></td>
+				  		</tr>
+					</script>
+
+    		<!--	</div>  -->
+
+				<div id="list2"> 
+			  		
+			  		<table>
+			    		<thead id="container-header" class="hidden">
+			      	<tr>
+			        	<th id="row1">Select</th>
+			        	
+			        	<th id="row2">Item</th>
+			        	<th id="row3">Qty</th>
+			      	</tr>
+			    		</thead>
+			    		<tbody id="container">
+			    		</tbody>
+			  			</table>
+
+
+				</div>
+
+					
+
+
+    		</div>
+
+    		
 		</section>
 
-	<script id="template" type="text/template">
-  		<tr>
-    		<td><input type="checkbox" name="myCheckbox"/></td>
-    		<td><label>{{itemText}}</label></td>
-    		<td><input type="text" name="quantity" size="2"/></td>
-    		<td><input type="button" value="delete" onclick="deleteItem(this)"/></td>
-  		</tr>
-	</script>
-
-<!-- Dynamic text below:-->
-
-		<br/>
-		(<span id="size">0</span>)
-			<input type="text" id="itemtext">
-			<input type="button" value="Add item" onclick="addTemplatedItem()">
-			<input type="button" value="Delete Selected" onclick="deleteSelected()"/>
-
-	<div>
-  		<table>
-    		<thead id="container-header" class="hidden">
-      	<tr>
-        	<th>Select</th>
-        	<th>Item</th>
-        	<th>Qty</th>
-      	</tr>
-    		</thead>
-    		<tbody id="container">
-    		</tbody>
-  		</table>
-	</div>
-
-
-	<footer>
-		<div class="content">
-			<p class="footer"> &copy; 2015 My Shopping List
-			</p>
-		</div>
-	</footer>
+	
+		<footer>
+			<div class="content">
+				<p class="footer"> &copy; 2015 My Shopping List
+				</p>
+			</div>
+		</footer>
 			
-</body>
+	</body>
 </html>
