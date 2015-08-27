@@ -1,0 +1,228 @@
+ /* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+/* End of Reset */
+/* Start of Custom Styles */
+
+
+
+body {
+  background-image: url('http://i.imgur.com/1NUpjy5.jpg');
+  height:100%;
+}
+
+
+
+
+/*Navigation Section */
+
+.top-navigation {
+  background-color: #fff;
+  line-height: 100%;
+  width: 100%;
+  opacity:0.6;
+  vertical-align: middle;
+  height:10%;
+  
+}
+
+.top-navigation > .content {
+  height: 70px;
+  margin: 0 auto;
+  
+  
+  
+}
+
+.top-navigation .logo {
+  height: 60px;
+}
+
+.top-navigation .links {
+    font-family: 'Roboto', sans-serif;
+    color: #838994;
+    font-size: 22px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+a {
+  color: #4c5058;
+  font-weight: 500;
+  text-decoration:none;
+}
+
+
+
+
+.top-navigation .links {
+    cursor: pointer;
+    color: #575C5F;
+}
+
+
+.introduction {
+      text-align: center;
+      
+}
+
+ .content {
+  margin-top:7.875rem;
+  text-align: center;
+  color: #1d1e21;
+}
+
+.hidden {
+  display:none;
+}
+
+
+
+.middle-container {
+  background-image: url('http://i.imgur.com/w5af2h7.png');
+  height:100%;
+  width:100%;
+  background-repeat: no-repeat;
+  overflow: auto;
+  margin: 0 auto;
+  
+}
+
+.left-container {
+  background-image: url('http://i.imgur.com/4upD34x.png');
+  width: 19%;
+  height:484px;
+  background-repeat: no-repeat;
+  float:left;
+  margin-right: -3%;
+
+} 
+
+.right-container {
+    float:right;
+    width:49%;
+    height:882px;
+    margin-top: 1%;
+    margin-right: -18%; 
+    background-image: url('http://i.imgur.com/cO2G12q.png');
+    background-repeat: no-repeat;
+    
+
+}
+
+
+
+#buttons {
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+
+#list2 {
+  margin-left: 7%;
+  margin-top: 3%;
+
+}
+
+
+#row1 {
+  padding-right: 3%;
+}
+
+#row2 {
+  padding-left: 5%;
+}
+
+#row3{
+  padding-left: 11%;
+}
+
+
+
+
+ 
+
+  #image4 {
+  background-image:url('http://i.imgur.com/soGqIkf.png');
+  width: 58%;
+  height: 189px;
+  background-repeat: no-repeat;
+  float:right;
+  margin-top: -21%;
+  margin-right: -6%;
+
+ 
+
+} 
+
+  #image6 {
+    background-image:url('http://i.imgur.com/ErJ9TMs.png');
+    width: 58%;
+    height: 189px;
+    background-repeat: no-repeat;
+    float:right; 
+    margin-right: -59%;
+    margin-top: -27%;
+
+
+  }
+
+  #image7 {
+    background-image:url('http://i.imgur.com/7CVMv71.png');
+    width: 58%;
+    height: 189px;
+    background-repeat: no-repeat;
+    float:right;
+    margin-right: 7%; 
+    margin-top: -21%;
+
+  }
+
+
+ 
+*************Footer************
+.footer {
+  color:#B8B9BA;
+
+}
