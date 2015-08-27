@@ -52,25 +52,30 @@ ol, ul {
 /*.content {
   padding: 0 15px:
 */
+html,body {
+  height:100%;
 }
 
-
+body {
+  background-image: url('http://i.imgur.com/1NUpjy5.jpg');
+  background-position: 0 top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /*Navigation Section */
 
 .top-navigation {
   background-color: #fff;
-  position: fixed;
   width: 100%;
-  z-index: 9999;
-  
+  opacity:0.6;
+  vertical-align: middle;
+  line-height:4em;
+  height:10%;
 }
 
 .top-navigation > .content {
   height: 70px;
   margin: 0 auto;
-  
-  
-  
 }
 
 .top-navigation .logo {
@@ -81,14 +86,11 @@ ol, ul {
     font-family: 'Roboto', sans-serif;
     color: #838994;
     font-size: 22px;
-    margin-top: 25px;
     -webkit-font-smoothing: antialiased;
 }
 
 .top-navigation .links li {
     display: inline-block;
-    margin-left: 25px;
-
 }
 
 a {
@@ -98,27 +100,17 @@ a {
 }
 
 
-
-
 .top-navigation .links {
     cursor: pointer;
     color: #575C5F;
 }
 
 .introduction {
-    background-image: url('http://i.imgur.com/1NUpjy5.jpg');
-    background-position: 0 top;
-    background-repeat: no-repeat;
-    background-size: cover;  
-    height: 31em;
-    overflow: auto;
-    text-align: center;
-    background-color: black;
-   
-
+  height: 90%;
+  text-align: center;
 }
 
- .content {
+.content {
   margin-top:7.875rem;
   text-align: center;
   color: #1d1e21;
@@ -128,26 +120,33 @@ a {
   display:none;
 }
 
-
-
-
-
-
-
-#image5 {
+.middle-container {
   background-image: url('http://i.imgur.com/w5af2h7.png');
   float:left;
-  height:75%;
+  height:100%;
   width:40%;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: -64%;
-  margin-left: 30%;
-  
+  background-size: 100% 100%;  
   overflow: auto;
 }
 
-#counter {
+.left-container {
+  float:left;
+  width:30%; 
+  height:100%; 
+  background-color:blue;
+  opacity:0.8;
+}
+
+.right-container {
+  float:right;
+  width:30%;
+  height:100%;
+  background-color:red;
+  opacity:0.8;
+}
+
+ #counter {
   float:center;
   margin-top: 9%;
 }
@@ -158,24 +157,7 @@ a {
 
 }
 
-#list2 {
-  margin-left: 7%;
-  margin-top: 3%;
 
-}
-
-
-#row1 {
-  padding-right: 3%;
-}
-
-#row2 {
-  padding-left: 5%;
-}
-
-#row3{
-  padding-left: 11%;
-}
 
 
 #image2 {
@@ -186,18 +168,15 @@ a {
     margin-right: -18%; 
     background-image: url('http://i.imgur.com/cO2G12q.png');
     background-repeat: no-repeat;
-    
-
 }
 
- #image3 {
+#image3 {
   background-image: url('http://i.imgur.com/4upD34x.png');
   width: 69%;
   height:584px;
   background-repeat: no-repeat;
-  float:right;
+  float:left;
   margin-right: -3%;
-
 } 
 
   #image4 {

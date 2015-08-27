@@ -3,11 +3,19 @@
 	<head>
 		<meta charset="UTF -8">
 		<title>Shopping List</title>
-			<link rel="stylesheet" href="style1.css">
-			<!--<link href="css/font-awesome.min.css" rel="stylesheet">
-				 -->
-				<script src="http://code.jquery.com/jquery.min.js"></script>
-				<script src="list15.js"></script>
+		<link rel="stylesheet" href="style1.css">
+		<!--<link href="css/font-awesome.min.css" rel="stylesheet">-->
+		<script src="http://code.jquery.com/jquery.min.js"></script>
+		<script src="list15.js"></script>
+
+		<script id="template" type="text/template">
+	  		<tr>
+	    		<td><input type="checkbox" name="myCheckbox"/></td>
+	    		<td><label>{{itemText}}</label></td>
+	    		<td><input type="text" name="quantity" size="2"/></td>
+	    		<td><input type="button" value="delete" onclick="deleteItem(this)"/></td>
+	  		</tr>
+		</script>
 	</head>
 
 	<body>
@@ -15,13 +23,12 @@
 			<div class="content">
 				<ul class="links">
 					<li> My Shopping List </li>
-	
 				</ul>
-
 			</div>
 		</nav>
 		
 		<section class="introduction">
+		<!--
     		<div>
 	    			
 		    			<div id="image2"> </div>
@@ -35,10 +42,12 @@
 		    			<div id="image7"> </div>
 
     		</div>
+		-->
+			<div class="left-container">
+				<div id="image3"></div>
+			</div>
 
-
-    		<div id="image5"> 
-    			
+    		<div class="middle-container">     			
     			<div id="counter">
     				(<span id="size">0</span>)
     			</div>
@@ -49,44 +58,29 @@
 					<input type="button" value="Delete Selected" onclick="deleteSelected()"/>
 				</div>
 
-			<!--	<div id="list"> -->
-					<script id="template" type="text/template">
-				  		<tr>
-				    		<td><input type="checkbox" name="myCheckbox"/></td>
-				    		<td><label>{{itemText}}</label></td>
-				    		<td><input type="text" name="quantity" size="2"/></td>
-				    		<td><input type="button" value="delete" onclick="deleteItem(this)"/></td>
-				  		</tr>
-					</script>
-
-    		<!--	</div>  -->
-
 				<div id="list2"> 
 			  		
 			  		<table>
 			    		<thead id="container-header" class="hidden">
-			      	<tr>
-			        	<th id="row1">Select</th>
-			        	
-			        	<th id="row2">Item</th>
-			        	<th id="row3">Qty</th>
-			      	</tr>
+					      	<tr>
+					        	<th id="row1">Select</th>
+					        	
+					        	<th id="row2">Item</th>
+					        	<th id="row3">Qty</th>
+					      	</tr>
 			    		</thead>
 			    		<tbody id="container">
 			    		</tbody>
-			  			</table>
-
-
+			  		</table>
 				</div>
-
-					
-
-
     		</div>
 
-    		
+			<div class="right-container">
+				<div id="image2"></div>
+			</div>    		
 		</section>
-
+		
+		<!--
 	
 		<footer>
 			<div class="content">
@@ -94,6 +88,6 @@
 				</p>
 			</div>
 		</footer>
-			
+		-->
 	</body>
 </html>
