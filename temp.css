@@ -1,0 +1,186 @@
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+/* End of Reset */
+/* Start of Custom Styles */
+
+
+html,body {
+  height:100%;
+}
+
+
+
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+/********Navigation Section **********/
+
+.top-navigation{
+  background-image: url('http://i.imgur.com/fNvA7IJ.jpg');
+  width: 100%;
+  opacity:1.6;
+  vertical-align: middle;
+  line-height:6em;
+  height:12%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+.top-navigation > .content {
+  height: 70px;
+  margin: 0 auto;
+}
+
+.top-navigation .logo {
+  height: 60px;
+}
+
+.top-navigation .links {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(28, 25, 24);
+    font-size: 40px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.top-navigation .links li {
+    display: inline-block;
+}
+
+a {
+  color:#4c5058 ;
+  font-weight: 500;
+  text-decoration:none;
+}
+
+
+.content {
+  margin-top:7.875rem;
+  text-align: center;
+  color: #1d1e21;
+}
+
+.hidden {
+  display:none;
+}
+
+/*******End of Navigation Section *********/
+
+/*******Shopping List********/
+
+body {
+  background-image: url('http://i.imgur.com/1NUpjy5.jpg');
+  background-position: 0 top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.introduction {
+  height: 90%;
+  text-align: center;
+}
+
+.middle-container {
+  background-image: url('http://i.imgur.com/w5af2h7.png');
+  float:left;
+  height:100%;
+  width:40%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  
+  overflow: auto;
+}
+
+.left-container {
+  float:left;
+  width:30%; 
+  height:100%; 
+  opacity:0.8;
+  overflow:hidden;
+  background-image:url(http://i.imgur.com/t0LTRU4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 2em;
+}
+
+.right-container {
+  float:right;
+  width:30%;
+  height:100%;
+  opacity:0.8;
+  overflow:hidden;
+  background-image:url('http://i.imgur.com/SfTrC8u.png');
+  background-repeat: no-repeat;
+  background-position: left 2em;
+  background-size: cover;
+  
+}
+
+#counter {
+  float:center;
+  margin-top: 9%;
+}
+
+#buttons {
+  margin-top: 5%;
+  margin-left: 5%;
+
+}
+
+#list2 {
+  margin-left: 7%;
+  margin-top: 3%;
+
+}
+
+
+.item-qty {
+  width:2em;
+}
+
+/*******End of Shopping List********/

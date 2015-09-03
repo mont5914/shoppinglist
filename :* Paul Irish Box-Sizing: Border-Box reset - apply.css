@@ -1,4 +1,4 @@
- /* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+/* Paul Irish Box-Sizing: Border-Box reset - apply a natural box layout model to all elements, but allowing components to change http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
   box-sizing: border-box;
 }
@@ -38,7 +38,9 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-
+body {
+	line-height: 1;
+}
 ol, ul {
 	list-style: none;
 }
@@ -46,33 +48,34 @@ ol, ul {
 /* Start of Custom Styles */
 
 
-
-body {
-  background-image: url('http://i.imgur.com/1NUpjy5.jpg');
+html,body {
   height:100%;
 }
 
 
 
+.shadow {
+   -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+}
+/********Navigation Section **********/
 
-/*Navigation Section */
-
-.top-navigation {
-  background-color: #fff;
-  line-height: 100%;
+.top-navigation{
+  background-image: url('http://i.imgur.com/fNvA7IJ.jpg');
   width: 100%;
-  opacity:0.6;
+  opacity:1.6;
   vertical-align: middle;
-  height:10%;
+  line-height:6em;
+  height:12%;
+  background-repeat: no-repeat;
+  background-size: cover;
   
 }
 
 .top-navigation > .content {
   height: 70px;
   margin: 0 auto;
-  
-  
-  
 }
 
 .top-navigation .logo {
@@ -81,33 +84,23 @@ body {
 
 .top-navigation .links {
     font-family: 'Roboto', sans-serif;
-    color: #838994;
-    font-size: 22px;
+    color: rgb(28, 25, 24);
+    font-size: 40px;
     -webkit-font-smoothing: antialiased;
 }
 
+.top-navigation .links li {
+    display: inline-block;
+}
 
 a {
-  color: #4c5058;
+  color:#4c5058 ;
   font-weight: 500;
   text-decoration:none;
 }
 
 
-
-
-.top-navigation .links {
-    cursor: pointer;
-    color: #575C5F;
-}
-
-
-.introduction {
-      text-align: center;
-      
-}
-
- .content {
+.content {
   margin-top:7.875rem;
   text-align: center;
   color: #1d1e21;
@@ -117,41 +110,61 @@ a {
   display:none;
 }
 
+/*******End of Navigation Section *********/
 
+/*******Shopping List********/
+
+body {
+  background-image: url('http://i.imgur.com/1NUpjy5.jpg');
+  background-position: 0 top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.introduction {
+  height: 90%;
+  text-align: center;
+}
 
 .middle-container {
   background-image: url('http://i.imgur.com/w5af2h7.png');
+  float:left;
   height:100%;
-  width:100%;
+  width:40%;
   background-repeat: no-repeat;
+  background-size: 100% 100%;  
   overflow: auto;
-  margin: 0 auto;
-  
 }
 
 .left-container {
-  background-image: url('http://i.imgur.com/4upD34x.png');
-  width: 19%;
-  height:484px;
-  background-repeat: no-repeat;
   float:left;
-  margin-right: -3%;
-
-} 
-
-.right-container {
-    float:right;
-    width:49%;
-    height:882px;
-    margin-top: 1%;
-    margin-right: -18%; 
-    background-image: url('http://i.imgur.com/cO2G12q.png');
-    background-repeat: no-repeat;
-    
-
+  width:30%; 
+  height:100%; 
+  opacity:0.8;
+  overflow:hidden;
+  background-image:url(http://i.imgur.com/t0LTRU4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right 2em;
 }
 
+.right-container {
+  float:right;
+  width:30%;
+  height:100%;
+  opacity:0.8;
+  overflow:hidden;
+  background-image:url('http://i.imgur.com/SfTrC8u.png');
+  background-repeat: no-repeat;
+  background-position: left 2em;
+  background-size: cover;
+  
+}
 
+#counter {
+  float:center;
+  margin-top: 9%;
+}
 
 #buttons {
   margin-top: 5%;
@@ -166,63 +179,8 @@ a {
 }
 
 
-#row1 {
-  padding-right: 3%;
+.item-qty {
+  width:2em;
 }
 
-#row2 {
-  padding-left: 5%;
-}
-
-#row3{
-  padding-left: 11%;
-}
-
-
-
-
- 
-
-  #image4 {
-  background-image:url('http://i.imgur.com/soGqIkf.png');
-  width: 58%;
-  height: 189px;
-  background-repeat: no-repeat;
-  float:right;
-  margin-top: -21%;
-  margin-right: -6%;
-
- 
-
-} 
-
-  #image6 {
-    background-image:url('http://i.imgur.com/ErJ9TMs.png');
-    width: 58%;
-    height: 189px;
-    background-repeat: no-repeat;
-    float:right; 
-    margin-right: -59%;
-    margin-top: -27%;
-
-
-  }
-
-  #image7 {
-    background-image:url('http://i.imgur.com/7CVMv71.png');
-    width: 58%;
-    height: 189px;
-    background-repeat: no-repeat;
-    float:right;
-    margin-right: 7%; 
-    margin-top: -21%;
-
-  }
-
-
- 
-*************Footer************
-.footer {
-  color:#B8B9BA;
-
-}
+/*******End of Shopping List********/

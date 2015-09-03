@@ -29,9 +29,16 @@ function addTemplatedItem() {
 	
 	$('#container').append(html);
 	displayCount();
-	$('#container-header').removeClass('hidden');
+	
 }
 
-function displayCount() {
-	$('#size').html($('#container tr').length);
+function displayCount() { 
+	var itemCount = $('#container tr').length; 
+	$('#size').html(itemCount);
+	
+	if (itemCount == 0) {
+    	$('#container-header').addClass('hidden');
+	}else {
+    	$('#container-header').removeClass('hidden');
+	};
 }
